@@ -12,54 +12,50 @@
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
-      "pageBundle": true,
-      "previewPath": "'blog'",
-      "filePrefix": null,
-      "clearEmpty": true,
+      "pageBundle": false,
+      "previewPath": null,
       "fields": [
         {
-          "title": "title",
+          "title": "Title",
           "name": "title",
-          "type": "string",
-          "single": true
+          "type": "string"
         },
         {
-          "title": "description",
+          "title": "Description",
           "name": "description",
           "type": "string"
         },
         {
-          "title": "published",
-          "name": "published",
+          "title": "Publishing date",
+          "name": "date",
           "type": "datetime",
           "default": "{{now}}",
           "isPublishDate": true
         },
         {
-          "title": "preview",
-          "name": "image",
-          "type": "image",
-          "isPreviewImage": true
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
         },
         {
-          "title": "tags",
-          "name": "tags",
-          "type": "list"
-        },
-        {
-          "title": "category",
-          "name": "category",
-          "type": "string"
-        },
-        {
-          "title": "draft",
+          "title": "Is in draft",
           "name": "draft",
-          "type": "boolean"
+          "type": "draft"
         },
         {
-          "title": "language",
-          "name": "language",
-          "type": "string"
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "published",
+          "name": "published",
+          "type": "datetime"
         }
       ]
     }
